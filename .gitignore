@@ -1,4 +1,5 @@
-.ideFingerPrintAuth/.idea/*
+FingerPrintAuth/.idea/*
+.idea/
 /*.apk
 /*.iml
 FingerPrintAuth/app/*.iml
