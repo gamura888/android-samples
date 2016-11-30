@@ -11,6 +11,7 @@ android {
         versionCode 1
         versionName "1.0"
         project.ext.set("archivesBaseName", "FingerPrintAuth-" + defaultConfig.versionName);
+        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
     }
     buildTypes {
         release {

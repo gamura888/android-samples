@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+
+import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -76,7 +79,10 @@ public class LoginActivity extends Activity {
                     .append("Contact : ")
                     .append("Otar.iantbelidze@gmail.com")
                     .append("\n")
-                    .append("Date : ").append("24/11/2016");
+                    .append("Date : ").append("24/11/2016")
+                    .append("\n")
+                    .append("Build Time : ")
+                    .append(DateFormat.format("dd/MM/yyyy hh:mm", new Date(BuildConfig.TIMESTAMP)));
 
             AlertDialog alertDialog = new AlertDialog.Builder(LoginActivity.this, AlertDialog.THEME_DEVICE_DEFAULT_DARK)
                     .setTitle("About")
