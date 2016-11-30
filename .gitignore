@@ -1,5 +1,5 @@
-FingerPrintAuth/.idea/*
-.idea/
+*/FingerPrintAuth/.idea/misc.xml
+*/.idea/*
 /*.apk
 /*.iml
 FingerPrintAuth/app/*.iml
